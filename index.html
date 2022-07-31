@@ -1,0 +1,44 @@
+<!-- Create your custom map method (myMap), which will work exactly similar to Array.map().
+Create your custom forEach method (myForEach), which will work exactly similar to Array.forEach().
+Create your custom filter method (myFilter), which will work exactly similar to Array.filter().
+Create your custom reduce method (myReduce), which will work exactly similar to Array.reduce(). -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>console it</h1>
+</body>
+</html>
+
+<script>
+  let   arr = ['apple','mango','banana']
+  let o2=arr.map(function(el,i,arr){
+    return el.length
+  })
+  console.log(o2)
+
+  let arr1 =[2,3,4];
+  var u2 = arr1.reduce(function(mul,el){
+    return mul*el
+  })
+  console.log(u2)
+
+
+  let arr2 =['assignment','problem','media','upload'];
+  var u3 = arr2.filter(function(el,i,arr){
+    return el[0]=="a"
+  })
+  console.log(u3)
+
+  let   arr3 = ['apple','mango','banana']
+  arr3.forEach(function(el,i,arr){
+    console.log (el+ ':'+ el.length)
+  })
+  
+</script>
